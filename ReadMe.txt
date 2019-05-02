@@ -1,0 +1,1 @@
+in order to this program to be work it needs to be in a direction with pending to fix subtitles and a folder named "fixed"
