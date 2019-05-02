@@ -1,4 +1,3 @@
-import re
 from os import getcwd, listdir, sep
 from os.path import isfile, join
 
