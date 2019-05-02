@@ -1,5 +1,6 @@
-from os import remove,listdir,getcwd,sep
+from os import remove, listdir, getcwd, sep
 from os.path import isfile, join
+
 mypath = getcwd()
 files = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 files.remove("fixer.py")
@@ -13,10 +14,14 @@ for i in files:
         input()
 
 
-_files = [f for f in listdir(mypath+sep+"fixed") if isfile(join(mypath+sep+"fixed", f))]
+_files = [
+    f
+    for f in listdir(mypath + sep + "fixed")
+    if isfile(join(mypath + sep + "fixed", f))
+]
 
 for i in _files:
-    path = mypath+sep+"fixed"+sep+i
+    path = mypath + sep + "fixed" + sep + i
     try:
         remove(path)
     except:
